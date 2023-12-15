@@ -1,14 +1,16 @@
+import { Input, Textarea } from "@material-tailwind/react";
+
 const Contact = () => {
   return (
-    <div className="bg-[#3b4046] text-background">
+    <div className="bg-[#3b4046]/90 text-background">
       <h2 className="font-playfair text-[29.86pt] text-center">Contacto</h2>
-      <div className="flex max-container flex-col items-center md:flex-row md:justify-evenly">
+      <div className="flex max-container flex-col items-center md:flex-row md:justify-evenly md:items-center">
         <div className="md:w-[40%]">
-          <p className="font-raleway p-8">
+          <p className="font-raleway p-8 mx-4">
             ¿Listo para convertir tus ideas en realidad? ¡Nos encantaría
             escucharte! Ya sea para discutir un nuevo proyecto, resolver tus
             dudas o simplemente tomar un café para hablar de arquitectura.
-            Contactanos a traves de nuestras redes sociales o mediante el
+            Contáctanos a traves de nuestras redes sociales o mediante el
             siguiente formulario.
           </p>
           <div className="flex justify-evenly m-5">
@@ -16,9 +18,13 @@ const Contact = () => {
             <a href="#" target="blank"><img src="src/assets/svg/instagram.svg" alt="instagram-logo" /></a>
           </div>
         </div>
-        <div className="my-5 border w-[80%] md:w-[40%] h-[15em]">
-          <p>Formulario</p>
-        </div>
+
+        <form action="post" className="my-5 flex flex-col justify-between w-[75%] md:w-[30%] h-[18em]">
+          <Input label="Nombre completo" color="blue"/>
+          <Input label="Número de teléfono" color="blue"/>
+          <Input label="Correo electrónico" color="blue"/>
+          <Textarea color="blue" label="Mensaje"/>
+        </form>
       </div>
     </div>
   );
