@@ -1,12 +1,12 @@
-import { Input, Textarea } from "@material-tailwind/react";
+import { Input, Textarea, Button } from "@material-tailwind/react";
 
 const Contact = () => {
   return (
     <div className="bg-[#3b4046]/90 text-background">
-      <h2 className="font-playfair text-[29.86pt] text-center">Contacto</h2>
+      <h2 className="font-playfair font-medium text-[24.89pt] text-center py-4">Contacto</h2>
       <div className="flex max-container flex-col items-center md:flex-row md:justify-evenly md:items-center">
         <div className="md:w-[40%]">
-          <p className="font-raleway p-8 mx-4">
+          <p className="font-raleway px-8 mx-4 text-base">
             ¿Listo para convertir tus ideas en realidad? ¡Nos encantaría
             escucharte! Ya sea para discutir un nuevo proyecto, resolver tus
             dudas o simplemente tomar un café para hablar de arquitectura.
@@ -24,6 +24,7 @@ const Contact = () => {
           <Input label="Número de teléfono" color="blue"/>
           <Input label="Correo electrónico" color="blue"/>
           <Textarea color="blue" label="Mensaje"/>
+          <Button variant="outlined" ripple={true} size="sm" color="blue">Enviar</Button>
         </form>
       </div>
     </div>
