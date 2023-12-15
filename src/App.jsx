@@ -1,12 +1,25 @@
-import Navbar from "./sections/Navbar"
-import Footer from "./sections/Footer"
+import {
+  Navbar,
+  Hero,
+  Services,
+  Projects,
+  About,
+  AboutMe,
+  Contact,
+  Footer}
+  from './sections/index.js'
 
 function App() {
   return (
     <>
       <Navbar/>
       <main>
-        <h1>Here we are gonna put all the components</h1>
+        <Hero/>
+        <Services/>
+        <Projects/>
+        <About/>
+        <AboutMe/>
+        <Contact/>
       </main>
       <Footer/>
     </>
