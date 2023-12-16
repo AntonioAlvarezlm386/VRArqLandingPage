@@ -1,2 +1,2 @@
 # VRArqLandingPage
-Landing page for architectural studio
+Landing page for an architectural studio

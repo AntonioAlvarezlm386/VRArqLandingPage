@@ -5,7 +5,7 @@ const About = () => {
         Sobre nosotros
       </h3>
       <div className="relative h-[800px] flex justify-center xl:justify-end overflow-x-hidden">
-        <div className="absolute bg-divider w-[90%] p-5
+        <div className="absolute bg-divider w-[90%] p-5 opacity-90
                         left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]
                         md:left-0 md:translate-x-0 md:w-[600px] md:p-8" >
           <h3 className="font-playfair text-[20.74pt] my-4">Misión</h3>
