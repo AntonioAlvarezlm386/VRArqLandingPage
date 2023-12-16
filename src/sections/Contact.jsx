@@ -2,7 +2,7 @@ import { Input, Textarea, Button } from "@material-tailwind/react";
 
 const Contact = () => {
   return (
-    <div className="bg-[#3b4046]/90 text-background">
+    <div id="contact" className="bg-[#3b4046]/90 text-background py-5">
       <h2 className="font-playfair font-medium text-[24.89pt] text-center py-4">Contacto</h2>
       <div className="flex max-container flex-col items-center md:flex-row md:justify-evenly md:items-center">
         <div className="md:w-[40%]">

@@ -3,7 +3,7 @@ const AboutMe = () => {
     <div className="max-container mx-auto">
 
       <div className="bg-primary text-background relative mx-auto mt-14 mb-36 p-8 w-[90%] 
-                      sm:p-16 md:w-[70%]">
+                      sm:p-16 md:w-[70%] xl:mb-14">
         <h3 className="font-playfair font-medium text-[24.89pt] mb-4 ">
           Sobre mi
         </h3>
@@ -18,7 +18,7 @@ const AboutMe = () => {
           llenos de vida y funcionalidad.
         </p>
         <img
-          className="absolute w-[300px] bottom-[-20%] right-[50%] translate-x-[50%] 
+          className="absolute shadow-2xl w-[300px] bottom-[-20%] right-[50%] translate-x-[50%] 
           xl:right-[10%] xl:top-[50%] xl:translate-y-[-50%] xl:w-[400px]"
           src="src/assets/img/profile.jpg"
           alt="foto-rafa"

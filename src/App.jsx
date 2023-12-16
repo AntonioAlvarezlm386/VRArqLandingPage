@@ -1,5 +1,5 @@
 import {
-  Navbar,
+  StickyNavbar,
   Hero,
   Services,
   Projects,
@@ -12,8 +12,8 @@ import {
 function App() {
   return (
     <>
-      <Navbar/>
-      <main>
+      <StickyNavbar/>
+      <main className='pt-32'>
         <Hero/>
         <Services/>
         <Projects/>

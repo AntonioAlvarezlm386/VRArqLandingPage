@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+import StickyNavbar from "./StickyNavbar";
 import Hero from "./Hero";
 import Services from "./Services";
 import Projects from "./Projects";
@@ -8,7 +8,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 
 export {
-    Navbar,
+    StickyNavbar,
     Hero,
     Services,
     Projects,
