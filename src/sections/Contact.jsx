@@ -1,4 +1,5 @@
 import { Input, Textarea, Button } from "@material-tailwind/react";
+import { socialNet } from "../constants";
 
 const Contact = () => {
   return (
@@ -14,16 +15,19 @@ const Contact = () => {
             siguiente formulario.
           </p>
           <div className="flex justify-evenly m-5">
-            <a href="https://www.facebook.com/profile.php?id=100083574302212" target="blank"><img src="src/assets/svg/facebook.svg" alt="facebook-logo" /></a>
-            <a href="#" target="blank"><img src="src/assets/svg/instagram.svg" alt="instagram-logo" /></a>
+            {
+              socialNet.map( link => (
+                <a href={link.href} target="_blank"><img src={link.icon} alt={link.label}/></a>
+              ))
+            }
           </div>
         </div>
 
-        <form action="post" className="my-5 flex flex-col justify-between w-[75%] md:w-[30%] h-[18em]">
-          <Input label="Nombre completo" color="blue"/>
-          <Input label="Número de teléfono" color="blue"/>
-          <Input label="Correo electrónico" color="blue"/>
-          <Textarea color="blue" label="Mensaje"/>
+        <form action="post" className="my-5 flex flex-col justify-between w-[75%] md:w-[30%] h-[18em] text-background">
+          <Input label="Nombre completo" className="!font-raleway !text-background" color="blue"/>
+          <Input label="Número de teléfono" className="!font-raleway !text-background" color="blue"/>
+          <Input label="Correo electrónico" className="!font-raleway !text-background" color="blue"/>
+          <Textarea color="blue" label="Mensaje" className="!font-raleway !text-background"/>
           <Button variant="outlined" ripple={true} size="sm" color="blue">Enviar</Button>
         </form>
       </div>

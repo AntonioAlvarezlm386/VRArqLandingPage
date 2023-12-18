@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <StickyNavbar/>
-      <main className='pt-32'>
+      <main className='mt-4'>
         <Hero/>
         <Services/>
         <Projects/>
