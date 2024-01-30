@@ -26,7 +26,7 @@ module.exports = withMT ({
       },
       backgroundImage : {
         'projects': "url('src/assets/img/project1.jpg')",
-        'services' : "url('src/assets/img/servicesbg.webp')"
+        'services' : "url('https://res.cloudinary.com/dkrsandox/image/upload/v1706573330/Rafa_Page/servicesbg_11zon_a9tlbs.webp')"
       }
     },
   },

@@ -68,7 +68,7 @@ const StickyNavbar = () => {
             <Typography
               as="a"
               href="#home"
-              className="mr-4 cursor-pointer py-1.5 font-medium font-playfair"
+              className="mr-4 cursor-pointer py-1.5 font-semibold font-playfair"
             >
               Vázquez Rafael Arquitecto
             </Typography>

@@ -9,7 +9,8 @@ const Projects = () => {
                       lg:grid-cols-3 lg:gap-8 lg:px-16 lg:h-[450px]">
         <ProjectsCard/>
         <ProjectsCard/>
-        <ProjectsCard/>
+        <div className="row-start-1 row-end-3 border-red-400 border-4"><ProjectsCard/></div>
+        
         <ProjectsCard/>
         <ProjectsCard/>
       </div>

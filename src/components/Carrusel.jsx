@@ -22,17 +22,17 @@ export function Carrusel() {
       )}
     >
       <img
-        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+        src="https://res.cloudinary.com/dkrsandox/image/upload/v1706571344/Rafa_Page/carrusel1_xgz9p8.webp"
         alt="image 1"
         className="h-full w-full object-cover"
       />
       <img
-        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+        src="https://res.cloudinary.com/dkrsandox/image/upload/v1706571804/Rafa_Page/carrusel2_ifyzac.webp"
         alt="image 2"
         className="h-full w-full object-cover"
       />
       <img
-        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+        src="https://res.cloudinary.com/dkrsandox/image/upload/v1706571690/Rafa_Page/carrusel2_p612qu.webp"
         alt="image 3"
         className="h-full w-full object-cover"
       />
