@@ -1,10 +1,10 @@
-import creativity from './creat.png'
-import funcionality from './func.png'
-import innovation from './inn.png'
-import serv1 from './serv1.png'
-import serv2 from './serv2.png'
-import serv3 from './serv3.png'
-import serv4 from './serv4.png'
+const creativity ='https://res.cloudinary.com/dkrsandox/image/upload/v1706573516/Rafa_Page/creat_x5gt7v.png' 
+const funcionality = 'https://res.cloudinary.com/dkrsandox/image/upload/v1706573518/Rafa_Page/func_tg8x6z.png'
+const innovation = 'https://res.cloudinary.com/dkrsandox/image/upload/v1706573517/Rafa_Page/inn_hx38dx.png' 
+const serv1 = 'https://res.cloudinary.com/dkrsandox/image/upload/v1706573405/Rafa_Page/serv2_hsndjx.png'
+const serv2 = 'https://res.cloudinary.com/dkrsandox/image/upload/v1706573404/Rafa_Page/serv1_hn3ttk.png'
+const serv3 = 'https://res.cloudinary.com/dkrsandox/image/upload/v1706573406/Rafa_Page/serv3_qixcvp.png'
+const serv4 = 'https://res.cloudinary.com/dkrsandox/image/upload/v1706573408/Rafa_Page/serv4_h2i33b.png'
 
 
 export {
