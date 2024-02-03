@@ -1,9 +1,10 @@
 const AboutMe = () => {
   return (
     <div className="max-container mx-auto">
-
-      <div className="bg-primary text-background relative mx-auto mt-14 mb-44 p-8 w-[90%] 
-                      sm:p-16 md:w-[70%] xl:mb-14 ">
+      <div
+        className="bg-primary text-background relative mx-auto mt-14 mb-44 p-8 w-[90%] 
+                      sm:p-16 md:w-[70%] xl:mb-14 "
+      >
         <h3 className="font-playfair font-medium text-[24.89pt] mb-4 ">
           Sobre mi
         </h3>
@@ -11,11 +12,10 @@ const AboutMe = () => {
           Hola, soy Rafael Marín Vázquez, y vivo en la ciudad de Comitán de
           Domínguez. Desde mis inicios, he estado obsesionado con unir la
           funcionalidad y la belleza en cada diseño arquitectónico. Mi
-          trayectoria en la arquitectura, inicia en [nombre de la universidad],
-          ha estado llena de diversidad y creatividad. Encuentro inspiración en
-          lo cotidiano, la naturaleza y la conexión humana, siempre con la meta
-          de crear espacios que cuenten historias y se conviertan en hogares
-          llenos de vida y funcionalidad.
+          trayectoria en la arquitectura ha estado llena de diversidad y
+          creatividad.<br/> <br/> Encuentro inspiración en lo cotidiano, la naturaleza y la
+          conexión humana, siempre con la meta de crear espacios que cuenten
+          historias y se conviertan en hogares llenos de vida y funcionalidad.
         </p>
         <img
           className="absolute shadow-2xl w-[250px] bottom-[-30%] right-[50%] translate-x-[50%] 

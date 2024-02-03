@@ -1,18 +1,18 @@
 import ProjectsCard from "../components/ProjectsCard";
+import { projects } from "../constants";
 
 const Projects = () => {
   return (
     <div id="projects" className="bg-[#DEE4EB] pb-14 pt-36" >
       <h2 className="text-center text-h2 font-playfair mb-5">Proyectos</h2>
-      <div className="max-container px-5 grid grid-cols-1 gap-3 h-[900px]
-                      sm:grid-cols-2 sm:h-[650px]
-                      lg:grid-cols-3 lg:gap-8 lg:px-16 lg:h-[450px]">
-        <ProjectsCard/>
-        <ProjectsCard/>
-        <div className="row-start-1 row-end-3 border-red-400 border-4"><ProjectsCard/></div>
-        
-        <ProjectsCard/>
-        <ProjectsCard/>
+      <div className="max-container px-5 grid grid-cols-1 gap-3
+                      sm:grid-cols-2 
+                      xl:grid-cols-4 xl:gap-8 xl:p-16">
+        {
+          projects.map( item => (
+            <ProjectsCard title={item.title} img={item.img} desc={item.description}/>
+          ))
+        }
       </div>
     </div>
   );

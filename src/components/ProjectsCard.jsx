@@ -5,17 +5,17 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
-function ProjectsCard() {
+function ProjectsCard( {title, img, desc} ) {
   return (
     <Card
-      shadow={false}
+      shadow={true}
       className="relative h-full grid items-end justify-center overflow-hidden text-center rounded-none"
     >
       <CardHeader
         floated={false}
         shadow={false}
         color="transparent"
-        className="absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] bg-cover bg-center"
+        className={`absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://res.cloudinary.com/dkrsandox/image/upload/v1706576414/Rafa_Page/carr2_uenu2l.webp')] bg-cover bg-center`}
       >
         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/90 via-black/60" />
       </CardHeader>
@@ -25,10 +25,10 @@ function ProjectsCard() {
           color="white"
           className="mb-6 font-medium leading-[1.5]"
         >
-          How we design and code open-source projects?
+          {title}
         </Typography>
         <Typography variant="p" className="mb-4 text-background">
-          Aqui va la descripción del proyecto
+          {desc}
         </Typography>
       </CardBody>
     </Card>
