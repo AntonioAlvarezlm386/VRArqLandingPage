@@ -6,7 +6,7 @@ const serv2 = 'https://res.cloudinary.com/dkrsandox/image/upload/v1706573404/Raf
 const serv3 = 'https://res.cloudinary.com/dkrsandox/image/upload/v1706573406/Rafa_Page/serv3_qixcvp.png';
 const serv4 = 'https://res.cloudinary.com/dkrsandox/image/upload/v1706573408/Rafa_Page/serv4_h2i33b.png';
 
-const project1 = 'https://res.cloudinary.com/dkrsandox/image/upload/v1706576414/Rafa_Page/carr2_uenu2l.webp';
+const project1 = 'https://res.cloudinary.com/dkrsandox/image/upload/v1706981035/Rafa_Page/project1_1_w94r2c.webp';
 
 
 

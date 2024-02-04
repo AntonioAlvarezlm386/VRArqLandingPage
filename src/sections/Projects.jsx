@@ -10,7 +10,7 @@ const Projects = () => {
                       xl:grid-cols-4 xl:gap-8 xl:p-16">
         {
           projects.map( item => (
-            <ProjectsCard title={item.title} img={item.img} desc={item.description}/>
+            <ProjectsCard title={item.title} image={item.img} desc={item.description}/>
           ))
         }
       </div>

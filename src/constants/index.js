@@ -17,12 +17,12 @@ export const heroCards = [
 
 export const services = [
     {
-        icon: serv2,
+        icon: serv1,
         title: "Dibujo arquitectónico",
         description: "Expertos en el arte del dibujo, trazamos lineas que materializan tus ideas."
     },
     {
-        icon: serv1,
+        icon: serv2,
         title: "Proyectos arquitectónicos",
         description: "Fusionamos creatividad y funcionalidad para desarrollar espacios innovadores."
     },

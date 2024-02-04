@@ -5,17 +5,17 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
-function ProjectsCard( {title, img, desc} ) {
+function ProjectsCard( {title, image, desc} ) {
   return (
     <Card
       shadow={true}
-      className="relative h-full grid items-end justify-center overflow-hidden text-center rounded-none"
+      className="relative h-full grid items-end justify-center overflow-hidden text-center rounded-none h-[550px]"
     >
       <CardHeader
         floated={false}
         shadow={false}
         color="transparent"
-        className={`absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://res.cloudinary.com/dkrsandox/image/upload/v1706576414/Rafa_Page/carr2_uenu2l.webp')] bg-cover bg-center`}
+        className="absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://res.cloudinary.com/dkrsandox/image/upload/v1706981677/Rafa_Page/project3_0_b4rr10.webp')] bg-cover bg-center"
       >
         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/90 via-black/60" />
       </CardHeader>
@@ -26,9 +26,6 @@ function ProjectsCard( {title, img, desc} ) {
           className="mb-6 font-medium leading-[1.5]"
         >
           {title}
-        </Typography>
-        <Typography variant="p" className="mb-4 text-background">
-          {desc}
         </Typography>
       </CardBody>
     </Card>

@@ -1,5 +1,5 @@
-import { Input, Textarea, Button } from "@material-tailwind/react";
 import { socialNet } from "../constants";
+import Form from "../components/Form";
 
 const Contact = () => {
   return (
@@ -22,14 +22,7 @@ const Contact = () => {
             }
           </div>
         </div>
-
-        <form action="post" className="my-5 flex flex-col justify-between w-[75%] md:w-[30%] h-[20em] text-background">
-          <Input label="Nombre completo" className="!font-raleway !text-background" color="blue"/>
-          <Input label="Número de teléfono" className="!font-raleway !text-background" color="blue"/>
-          <Input label="Correo electrónico" className="!font-raleway !text-background" color="blue"/>
-          <Textarea color="blue" label="Mensaje" className="!font-raleway !text-background"/>
-          <Button variant="outlined" ripple={true} size="sm" color="blue">Enviar</Button>
-        </form>
+            <Form/>
       </div>
     </div>
   );

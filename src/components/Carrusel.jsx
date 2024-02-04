@@ -22,7 +22,7 @@ export function Carrusel() {
       )}
     >
       <img
-        src="https://res.cloudinary.com/dkrsandox/image/upload/v1706576416/Rafa_Page/carr_yixzeb.webp"
+        src="https://res.cloudinary.com/dkrsandox/image/upload/v1706978836/Rafa_Page/car2_rwqpug.webp"
         alt="image 1"
         className="h-full w-full-cover"
       />
@@ -32,7 +32,7 @@ export function Carrusel() {
         className="h-full w-full object-cover"
       />
       <img
-        src="https://res.cloudinary.com/dkrsandox/image/upload/v1706576414/Rafa_Page/carr2_uenu2l.webp"
+        src="https://res.cloudinary.com/dkrsandox/image/upload/v1706978836/Rafa_Page/car1_l75jxd.webp"
         alt="image 3"
         className="h-full w-full object-cover"
       />
