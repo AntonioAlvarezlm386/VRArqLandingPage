@@ -3,11 +3,11 @@ import { services } from "../constants";
 
 const Services = () => {
   return (
-    <div className="bg-services bg-center h-[1450px] sm:h-[700px] xl:h-[300px]">
+    <div className="bg-services mt-4 lg:mt-32 bg-center h-[1450px] sm:h-[700px] xl:h-[300px]">
       <div className="bg-accent w-full h-full opacity-90 ">
         <div className="max-container text-background pt-5 px-10">
           <h2 className="font-playfair text-h2 font-medium">Nuestros servicios</h2>
-          <p className="font-raleway text-xl font-medium">
+          <p className="font-raleway text-lg font-medium">
             Ofrecemos una amplia gama de servicios para para dar vida a tus
             ideas y transformar tus proyectos en realidad.
           </p>

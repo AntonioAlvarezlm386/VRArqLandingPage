@@ -24,9 +24,9 @@ function ProjectsCard( {title, image, desc} ) {
         floated={false}
         shadow={false}
         color="transparent"
-        className={`absolute inset-0 m-0 h-full w-full rounded-none bg-[url('${image}')] bg-cover bg-center`}
+        className={`absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://res.cloudinary.com/dkrsandox/image/upload/v1706981035/Rafa_Page/project1_1_w94r2c.webp')] bg-cover bg-center`}
       >
-        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/90 via-black/60" />
+        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/90 via-black/650" />
       </CardHeader>
       
       <CardBody className="relative py-14 px-6 md:px-12">

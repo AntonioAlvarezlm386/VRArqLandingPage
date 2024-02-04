@@ -69,7 +69,7 @@ const Form = () => {
         onChange={handleChange}
         className="!font-raleway !text-background"
       />
-      <Button variant="outlined" ripple={true} size="sm" color="blue" onClick={handleOpen}>
+      <Button variant="outlined" ripple={true} size="sm" onClick={handleOpen} className="hover:bg-divider border-blue-400 font-raleway text-white hover:text-accent">
         Enviar
       </Button>
 
@@ -85,8 +85,8 @@ const Form = () => {
             En breve nos pondremos en contacto contigo.
           </Typography>
         </DialogBody>
-        <DialogFooter className="space-x-2">
-          <Button variant="text" color="blue-gray" onClick={sendMessage}>
+        <DialogFooter>
+          <Button variant="text" color="blue-gray" onClick={sendMessage} className="mx-auto hover:bg-accent hover:text-white border-accent border">
             Cerrar
           </Button>
         </DialogFooter>
