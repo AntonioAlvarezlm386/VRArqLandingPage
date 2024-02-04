@@ -1,8 +1,19 @@
-import { Input, Textarea, Button } from "@material-tailwind/react";
+import { Input,
+  Textarea,
+  Button,
+  Dialog,
+  DialogHeader,
+  DialogBody,
+  DialogFooter,
+Typography } from "@material-tailwind/react";
 import { useState } from "react";
 
 
 const Form = () => {
+  const [ open, setOpen]= useState(false);
+
+  const handleOpen = () => setOpen(!open);
+
     const [ formData, setFormData ] = useState({
         name: '',
         phone: '',
@@ -17,6 +28,7 @@ const Form = () => {
     const sendMessage = (e) => {
         e.preventDefault();
         console.log(formData);
+        handleOpen();
     }
 
   return (
@@ -57,9 +69,28 @@ const Form = () => {
         onChange={handleChange}
         className="!font-raleway !text-background"
       />
-      <Button variant="outlined" ripple={true} size="sm" color="blue" onClick={sendMessage}>
+      <Button variant="outlined" ripple={true} size="sm" color="blue" onClick={handleOpen}>
         Enviar
       </Button>
+
+      <Dialog open={open} handler={handleOpen} size="xs">
+        <DialogHeader>
+          <Typography variant="h5" color="blue-gray" className="mx-auto">
+            Gracias por tu mensaje!
+          </Typography>
+        </DialogHeader>
+        <DialogBody divider className="grid place-items-center gap-4">
+          <img src="https://res.cloudinary.com/dkrsandox/image/upload/v1707059648/Rafa_Page/icon_icou5i.png" alt="icon" width={100} />
+          <Typography className="text-center font-normal">
+            En breve nos pondremos en contacto contigo.
+          </Typography>
+        </DialogBody>
+        <DialogFooter className="space-x-2">
+          <Button variant="text" color="blue-gray" onClick={sendMessage}>
+            Cerrar
+          </Button>
+        </DialogFooter>
+      </Dialog>
     </form>
   );
 };

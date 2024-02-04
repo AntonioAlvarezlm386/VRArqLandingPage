@@ -22,7 +22,7 @@ export const services = [
         description: "Expertos en el arte del dibujo, trazamos lineas que materializan tus ideas."
     },
     {
-        icon: serv2,
+        icon: serv,
         title: "Proyectos arquitectónicos",
         description: "Fusionamos creatividad y funcionalidad para desarrollar espacios innovadores."
     },

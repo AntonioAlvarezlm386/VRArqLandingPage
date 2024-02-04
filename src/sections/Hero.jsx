@@ -3,7 +3,7 @@ import { heroCards } from "../constants"
 
 const Hero = () => {
   return (
-    <div className="relative max-container lg:h-[575px] lg:mb-24">
+    <div className="relative max-container lg:h-[575px]">
       <div className="bg-divider px-10 py-20 w-full
                       lg:w-[75%] ">
         <div className="w-full max-w-md mx-auto lg:mx-0 xl:w-[50%] xl:ml-16">
