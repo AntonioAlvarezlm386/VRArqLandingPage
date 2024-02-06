@@ -1,24 +1,21 @@
 import { useState } from "react";
 
 
-export function Gallery() {
+export function Gallery( {mainImg, img2, img3} ) {
   const data = [
     {
-      imgelink:
-        "https://res.cloudinary.com/dkrsandox/image/upload/v1706981032/Rafa_Page/project1_0_hq3egy.webp",
+      imgelink:mainImg,
     },
     {
-      imgelink:
-        "https://res.cloudinary.com/dkrsandox/image/upload/v1706981032/Rafa_Page/project1_2_f3scoy.webp",
+      imgelink:img2,
     },
     {
-      imgelink:
-        "https://res.cloudinary.com/dkrsandox/image/upload/v1706981032/Rafa_Page/project1_0_hq3egy.webp",
+      imgelink:img3,
     }
   ];
  
   const [active, setActive] = useState(
-    "https://res.cloudinary.com/dkrsandox/image/upload/v1706981032/Rafa_Page/project1_2_f3scoy.webp",
+    mainImg,
   );
  
   return (

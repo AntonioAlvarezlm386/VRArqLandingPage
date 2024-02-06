@@ -1,58 +1,60 @@
-import { Input,
+import {
+  Input,
   Textarea,
   Button,
-  Dialog,
-  DialogHeader,
-  DialogBody,
-  DialogFooter,
-Typography } from "@material-tailwind/react";
+} from "@material-tailwind/react";
 import { useState } from "react";
-
+import FormDialog from "./FormDialog";
 
 const Form = () => {
-  const [ open, setOpen]= useState(false);
-
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(!open);
 
-    const [ formData, setFormData ] = useState({
-        name: '',
-        phone: '',
-        email: '',
-        message: ''
-    });
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-    const handleChange = (e) => {
-        setFormData({...formData, [e.target.name] : e.target.value});
-    };
-
-    const sendMessage = (e) => {
-        e.preventDefault();
-        console.log(formData);
-        handleOpen();
+  const [ errors, setErrors ] = useState({});
+  const sendMessage = (e) => {
+    e.preventDefault();
+    if(!validation()){
+      handleOpen();
+    } else {
+      handleOpen();
+      {/**ENVIAR! */}
     }
+  };
+
+  const validation = () => {
+    return false;
+  }
 
   return (
-    <form
-      className="my-5 flex flex-col justify-between w-[75%] md:w-[30%] h-[20em] text-background"
-    >
+    <form className="my-5 flex flex-col justify-between w-[75%] md:w-[30%] h-[21em] text-white">
       <Input
         label="Nombre completo"
         name="name"
-        type="text"
         value={formData.name}
         onChange={handleChange}
-        className="!font-raleway !text-background"
+        className={`!font-raleway !text-white`}
         color="blue"
       />
+    
       <Input
         label="Número de teléfono"
-        type="number"
         name="phone"
         value={formData.phone}
         onChange={handleChange}
-        className="!font-raleway !text-background"
+        className={`!font-raleway !text-background`}
         color="blue"
       />
+  
       <Input
         label="Correo electrónico"
         name="email"
@@ -61,6 +63,8 @@ const Form = () => {
         className="!font-raleway !text-background"
         color="blue"
       />
+      
+
       <Textarea
         color="blue"
         name="message"
@@ -69,28 +73,17 @@ const Form = () => {
         onChange={handleChange}
         className="!font-raleway !text-background"
       />
-      <Button variant="outlined" ripple={true} size="sm" onClick={handleOpen} className="hover:bg-divider border-blue-400 font-raleway text-white hover:text-accent">
+     
+      <Button
+        variant="outlined"
+        ripple={true}
+        size="sm"
+        onClick={sendMessage}
+        className="hover:bg-divider border-blue-400 font-raleway text-white hover:text-accent"
+      >
         Enviar
       </Button>
-
-      <Dialog open={open} handler={handleOpen} size="xs">
-        <DialogHeader>
-          <Typography variant="h5" color="blue-gray" className="mx-auto">
-            Gracias por tu mensaje!
-          </Typography>
-        </DialogHeader>
-        <DialogBody divider className="grid place-items-center gap-4">
-          <img src="https://res.cloudinary.com/dkrsandox/image/upload/v1707059648/Rafa_Page/icon_icou5i.png" alt="icon" width={100} />
-          <Typography className="text-center font-normal">
-            En breve nos pondremos en contacto contigo.
-          </Typography>
-        </DialogBody>
-        <DialogFooter>
-          <Button variant="text" color="blue-gray" onClick={sendMessage} className="mx-auto hover:bg-accent hover:text-white border-accent border">
-            Cerrar
-          </Button>
-        </DialogFooter>
-      </Dialog>
+      <FormDialog open={open} handleOpen={handleOpen} error={true} />
     </form>
   );
 };

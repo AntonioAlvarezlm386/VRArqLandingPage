@@ -5,12 +5,12 @@ const Projects = () => {
   return (
     <div id="projects" className="bg-[#DEE4EB] pb-24 pt-36" >
       <h2 className="text-center text-h2 font-playfair mb-5">Proyectos</h2>
-      <div className="max-container px-5 grid grid-cols-1 gap-3
-                      sm:grid-cols-2 
-                      xl:grid-cols-4 xl:gap-8 xl:p-16">
+      <div className="max-container px-5 grid grid-cols-1 gap-4
+                      sm:grid-cols-2 sm:gap-2
+                      xl:grid-cols-4 xl:gap-4 xl:p-16">
         {
           projects.map( item => (
-            <ProjectsCard title={item.title} image={item.img} desc={item.description}/>
+            <ProjectsCard cardProps={item.mainData} modalProps={item.modalData}/>
           ))
         }
       </div>
