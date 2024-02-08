@@ -23,7 +23,7 @@ const FormDialog = ({ open, handleOpen, error }) => {
         width={100}
       />
       <Typography className="text-center font-normal">
-        { error? "Asegúrate de haber llenado correctamente todos los campos" :  "En breve nos pondremos en contacto contigo."}
+        { error? "Asegúrate de haber llenado correctamente todos los campos!" :  "En breve nos pondremos en contacto contigo."}
       </Typography>
     </DialogBody>
     <DialogFooter>
