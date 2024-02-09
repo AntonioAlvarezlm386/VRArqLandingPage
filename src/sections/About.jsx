@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div id="about" className="max-container mt-10 md:px-10 xl:px-16">
       <h3 className="font-playfair text-[24.89pt] text-center my-5">
-        Mi perspectiva profesional
+        Perspectiva profesional
       </h3>
       <div className="relative h-[850px] flex justify-center xl:justify-end overflow-x-hidden">
         <div
