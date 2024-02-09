@@ -9,11 +9,13 @@ const Contact = () => {
       </h2>
       <div className="flex max-container flex-col items-center md:flex-row md:justify-evenly md:items-center">
         <div className="md:w-[35%]">
-          <p className="font-raleway px-6 mx-4 text-xl font-medium mb-2 text-blue-200">¿Listo para convertir tus ideas en realidad?</p>
+          <p className="font-raleway px-6 mx-4 text-xl font-medium mb-2 text-blue-200">
+            ¿Listo para convertir tus ideas en realidad?
+          </p>
           <p className="font-raleway px-6 mx-4 text-base">
-            ¡Nos encantaría escucharte! Ya sea para discutir un nuevo proyecto,
+            ¡Me encantaría escucharte! Ya sea para discutir un nuevo proyecto,
             resolver tus dudas o simplemente tomar un café para hablar de
-            arquitectura. Contáctanos a traves de nuestras redes sociales o
+            arquitectura. Contáctame a traves de mis redes sociales o
             mediante el siguiente formulario.
           </p>
           <div className="flex justify-evenly m-5">

@@ -1,11 +1,13 @@
 import { Carrusel } from "../components/Carrusel";
-import { heroCards } from "../constants"
+import { heroCards } from "../constants";
 
 const Hero = () => {
   return (
     <div className="relative max-container lg:h-[575px]">
-      <div className="bg-divider px-10 py-20 w-full
-                      lg:w-[75%] ">
+      <div
+        className="bg-divider px-10 py-20 w-full
+                      lg:w-[75%] "
+      >
         <div className="w-full max-w-md mx-auto lg:mx-0 xl:w-[50%] xl:ml-16">
           <h1 className="text-h1 font-playfair font-medium">
             Arquitectura para tu vida cotidiana
@@ -16,19 +18,17 @@ const Hero = () => {
             inspiran y transforman.
           </p>
           <div className="flex justify-evenly">
-            {
-              heroCards.map( (card, index) => (
-                <div className="flex flex-col items-center my-4" key={index}>
-                  <img src={card.icon} alt={card.label} className="w-12"/>
-                  <p className="font-raleway font-medium my-2">{card.label}</p>
-                </div>
-              ))
-            }
+            {heroCards.map((card, index) => (
+              <div className="flex flex-col items-center my-4" key={index}>
+                <img src={card.icon} alt={card.label} className="w-12" />
+                <p className="font-raleway font-medium my-2">{card.label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
       <div className="relative w-[90%] mx-auto -top-14 max-w-xl lg:absolute lg:max-w-[50%] lg:h-[90%] lg:right-0 lg:top-[20%]">
-        <Carrusel/>
+        <Carrusel />
       </div>
     </div>
   );

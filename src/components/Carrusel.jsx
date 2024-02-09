@@ -6,7 +6,7 @@ export function Carrusel() {
       className="rounded-lg"
       loop
       autoplay
-      autoplayDelay={5000}
+      autoplayDelay={4500}
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
           {new Array(length).fill("").map((_, i) => (
@@ -24,7 +24,7 @@ export function Carrusel() {
       <img
         src="https://res.cloudinary.com/dkrsandox/image/upload/v1706978836/Rafa_Page/car2_rwqpug.webp"
         alt="image 1"
-        className="h-full w-full-cover"
+        className="h-full w-full object-cover"
       />
       <img
         src="https://res.cloudinary.com/dkrsandox/image/upload/v1706576413/Rafa_Page/carr1_hbnkbo.webp"

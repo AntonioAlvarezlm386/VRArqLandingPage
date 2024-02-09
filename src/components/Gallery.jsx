@@ -1,23 +1,20 @@
 import { useState } from "react";
 
-
-export function Gallery( {mainImg, img2, img3} ) {
+export function Gallery({ mainImg, img2, img3 }) {
   const data = [
     {
-      imgelink:mainImg,
+      imgelink: mainImg,
     },
     {
-      imgelink:img2,
+      imgelink: img2,
     },
     {
-      imgelink:img3,
-    }
+      imgelink: img3,
+    },
   ];
- 
-  const [active, setActive] = useState(
-    mainImg,
-  );
- 
+
+  const [active, setActive] = useState(mainImg);
+
   return (
     <div className="grid gap-2">
       <div>

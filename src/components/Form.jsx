@@ -1,4 +1,4 @@
-import { Input, Textarea, Button, Spinner } from "@material-tailwind/react";
+import { Input, Textarea, Button } from "@material-tailwind/react";
 import { useState } from "react";
 import FormDialog from "./FormDialog";
 import FormAlert from "./FormAlert";
@@ -6,8 +6,8 @@ import FormAlert from "./FormAlert";
 const Form = () => {
   const [open, setOpen] = useState(false);
   const [errors, setErrors] = useState({});
-  const [ fetchError, setFetchError ] = useState(false);
-  const [ loading, setLoading ] = useState(false); 
+  const [fetchError, setFetchError] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -59,7 +59,7 @@ const Form = () => {
     if (validation()) {
       handleOpen();
       setLoading(true);
-      fetch("https://formsubmit.co/ajax/antoniolm386@gmail.com", {
+      fetch("https://formsubmit.co/ajax/rafaelmarinmv@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -72,11 +72,11 @@ const Form = () => {
           Message: formData.message,
         }),
       })
-        .then((response) => {
+        .then(() => {
           setLoading(false);
           setFetchError(false);
         })
-        .catch((error) => {
+        .catch(() => {
           setLoading(false);
           setFetchError(true);
         });
@@ -90,7 +90,7 @@ const Form = () => {
         name="name"
         value={formData.name}
         onChange={handleChange}
-        className={`!font-raleway !text-white`}
+        className={`!font-raleway !text-background`}
         color="blue"
       />
       {errors.name && <FormAlert warning={errors.name} />}
@@ -136,7 +136,12 @@ const Form = () => {
         Enviar
       </Button>
 
-      <FormDialog open={open} handleOpen={handleOpen} sending={loading} error={fetchError}/>
+      <FormDialog
+        open={open}
+        handleOpen={handleOpen}
+        sending={loading}
+        error={fetchError}
+      />
     </form>
   );
 };

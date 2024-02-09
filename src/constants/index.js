@@ -4,7 +4,7 @@ import { creativity, funcionality, innovation, serv1, serv2, serv3, serv4, proje
 export const socialNet = [
     {label : "facebook", icon: facebook, href: 'https://www.facebook.com/profile.php?id=100083574302212'},
     {label : "instagram", icon: instagram, href: 'https://www.instagram.com/arquitecto_rafa.vazquez/'},
-    {label : "Mail", icon : mail, href : 'mailto:rafaelmarinm@gmail.com'}
+    {label : "Mail", icon : mail, href : 'mailto:rafaelmarinmv@gmail.com'}
 ]
 
 
@@ -55,7 +55,7 @@ export const projects = [
     {
         mainData : {
             title: "Remodelación de casa habitación",
-            description: 'Se transformo una casa histórica en un lugar moderno. combinando elementos tradicionales con comodidades contemporáneas',
+            description: 'Transformamos una casa histórica en un lugar moderno. combinando elementos tradicionales con comodidades contemporáneas',
             img1 : project21,
     
         }, 
@@ -68,7 +68,7 @@ export const projects = [
     {
         mainData : {
             title: "Digitalización de planos y renderizado 3D",
-            description: 'Cada detalle fue representado con precisión para una visualización integral y la ejecución eficiente del proyecto.',
+            description: 'Representamos cada detalle con precisión para una visualización integral y la ejecución eficiente del proyecto.',
             img1 : project31,
     
         }, 

@@ -8,16 +8,18 @@ const AboutMe = () => {
         <h3 className="font-playfair font-medium text-[24.89pt] mb-4 ">
           Sobre mi
         </h3>
-        <p className="font-raleway font-medium text-xl mb-4 border-b-2 border-b-divider">Hola, soy <span className="text-blue-200 ">Rafael Marín Vázquez</span></p>
+        <p className="font-raleway font-medium text-xl mb-4 border-b-2 border-b-divider">
+          Hola, soy <span className="text-blue-200 ">Rafael Marín Vázquez</span>
+        </p>
         <p className="font-raleway text-base mb-24 xl:w-[35vw] xl:max-w-[70%] xl:mb-0">
-          Vivo en la ciudad de Comitán de
-          Domínguez. Desde mis inicios, he estado obsesionado con unir la
-          funcionalidad y la belleza en cada diseño arquitectónico. 
-          <br/> <br /> Mi
-          trayectoria en la arquitectura ha estado llena de diversidad y
-          creatividad. Encuentro inspiración en lo cotidiano, la naturaleza y la
-          conexión humana, siempre con la meta de crear espacios que cuenten
-          historias y se conviertan en hogares llenos de vida y funcionalidad.
+          Vivo en la ciudad de Comitán de Domínguez. Desde mis inicios, he
+          estado obsesionado con unir la funcionalidad y la belleza en cada
+          diseño arquitectónico.
+          <br /> <br /> Mi trayectoria en la arquitectura ha estado llena de
+          diversidad y creatividad. Encuentro inspiración en lo cotidiano, la
+          naturaleza y la conexión humana, siempre con la meta de crear espacios
+          que cuenten historias y se conviertan en hogares llenos de vida y
+          funcionalidad.
         </p>
         <img
           className="absolute shadow-2xl w-[250px] bottom-[-30%] right-[50%] translate-x-[50%] border-2 rounded-md border-divider
