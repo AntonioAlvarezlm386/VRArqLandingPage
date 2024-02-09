@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <div className="max-container mx-auto pb-4">
+    <div className="max-container mx-auto mb-10 pb-4">
       <div
         className="bg-primary text-background rounded-md relative mx-auto mt-14 mb-44 p-8 w-[90%] 
                       sm:p-16 md:w-[70%] xl:mb-14 "

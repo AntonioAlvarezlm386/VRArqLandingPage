@@ -9,7 +9,7 @@ import { Gallery } from "./Gallery";
 export function ProjectModal({ open, handler, modalProps, mainImg }) {
   return (
     <>
-      <Dialog open={open} handler={handler} size="md" className="h-fit">
+      <Dialog open={open} handler={handler} size="md" className="h-[80vh] sm:h-fit overflow-scroll">
         <DialogBody className="h-fit overflow-scroll flex flex-wrap justify-center flex-row pb-0">
           <div className="h-full  min-w-[20em]">
             <Gallery
@@ -22,7 +22,7 @@ export function ProjectModal({ open, handler, modalProps, mainImg }) {
             <p>{modalProps.resume}</p>
           </div>
         </DialogBody>
-        <DialogFooter className="m-0 pt-0 border">
+        <DialogFooter className="m-0 pt-0 ">
           <Button
             variant="text"
             color="blue-gray"

@@ -4,7 +4,7 @@ const About = () => {
       <h3 className="font-playfair text-[24.89pt] text-center my-5">
         Perspectiva profesional
       </h3>
-      <div className="relative h-[850px] flex justify-center xl:justify-end overflow-x-hidden">
+      <div className="relative h-[980px] sm:h-[850px] flex justify-center xl:justify-end overflow-x-hidden">
         <div
           className="absolute bg-divider w-[90%] p-5
                         left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]
