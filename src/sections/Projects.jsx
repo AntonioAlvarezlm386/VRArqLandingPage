@@ -9,8 +9,8 @@ const Projects = () => {
                       sm:grid-cols-2 sm:gap-2
                       xl:grid-cols-4 xl:gap-4 xl:p-16">
         {
-          projects.map( item => (
-            <ProjectsCard cardProps={item.mainData} modalProps={item.modalData}/>
+          projects.map( (item, index) => (
+            <ProjectsCard cardProps={item.mainData} modalProps={item.modalData} key={index}/>
           ))
         }
       </div>

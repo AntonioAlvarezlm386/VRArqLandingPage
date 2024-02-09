@@ -2,12 +2,9 @@ import { Input, Textarea, Button } from "@material-tailwind/react";
 import { useState } from "react";
 import FormDialog from "./FormDialog";
 import FormAlert from "./FormAlert";
-import {Resend} from "resend";
 
 const Form = () => {
   const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(!open);
-
   const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({
     name: "",
@@ -15,6 +12,8 @@ const Form = () => {
     email: "",
     message: "",
   });
+
+  const handleOpen = () => setOpen(!open);
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -52,38 +51,40 @@ const Form = () => {
     return Object.keys(errors).length === 0;
   };
 
-  const sendEmail = () => {
-    const resend = new Resend('re_VQwGntfg_26cAbukprGhViT5fGHCq3rL1');
-
-    resend.emails.send({
-      from: 'SitioWeb@resend.dev',
-      to: "antoniolm386@gmail.com",
-      subject: 'Correo desde sitio web',
-      html: `<p>Hola ${formData.name},<br/><br/>${formData.message}</p>`
-    }).then(() => {
-      console.log("Email enviado con éxito");
-    }).catch((error) => {
-      console.error("Error al enviar el correo electrónico:", error);
-    });
-  }
-
   const sendMessage = (e) => {
     e.preventDefault();
-    const isValid = validation();
+    let status = false;
 
-    if (isValid) {
-      sendEmail();
-      console.log("enviado");
+    if (validation()) {
+      fetch("https://formsubmit.co/ajax/antoniolm386@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          Nombre: formData.name,
+          Telefono: formData.phone,
+          Correo: formData.email,
+          Message: formData.message,
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .catch((error) => {console.log(error)});
+        handleOpen();
     } else {
-      console.log("error");
+      handleOpen();
     }
+
+    return status;
   };
 
   return (
     <form className="my-5 flex flex-col justify-between w-[75%] md:w-[30%] h-[21em] text-white">
       <Input
         label="Nombre completo"
-        name="name"
+        name="Nombre"
         value={formData.name}
         onChange={handleChange}
         className={`!font-raleway !text-white`}
@@ -93,16 +94,17 @@ const Form = () => {
 
       <Input
         label="Número de teléfono"
-        name="phone"
+        name="Telefono"
         value={formData.phone}
         onChange={handleChange}
         className={`!font-raleway !text-background`}
         color="blue"
       />
       {errors.phone && <FormAlert warning={errors.phone} />}
+
       <Input
         label="Correo electrónico"
-        name="email"
+        name="Correo"
         value={formData.email}
         onChange={handleChange}
         className="!font-raleway !text-background"
@@ -112,7 +114,7 @@ const Form = () => {
 
       <Textarea
         color="blue"
-        name="message"
+        name="Mensaje"
         value={formData.message}
         label="Mensaje"
         onChange={handleChange}
@@ -121,17 +123,17 @@ const Form = () => {
       {errors.message && <FormAlert warning={errors.message} />}
 
       <Button
+        onClick={sendMessage}
         type="submit"
         variant="outlined"
         ripple={true}
         size="sm"
-        onClick={sendMessage}
         className="hover:bg-divider border-blue-400 font-raleway text-white hover:text-accent"
       >
         Enviar
       </Button>
 
-      <FormDialog open={open} handleOpen={handleOpen} />
+      <FormDialog open={open} handleOpen={handleOpen} error={sendMessage} />
     </form>
   );
 };

@@ -15,8 +15,8 @@ const Services = () => {
 
         <div className="max-container w-full grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4 justify-items-center">
             {
-              services.map( service => (
-                <ServicesCard icon={service.icon} title={service.title} description={service.description}  />
+              services.map( (service, index) => (
+                <ServicesCard icon={service.icon} title={service.title} description={service.description} key={index} />
               ))
             }
           </div>

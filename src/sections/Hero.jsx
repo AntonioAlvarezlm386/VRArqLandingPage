@@ -17,8 +17,8 @@ const Hero = () => {
           </p>
           <div className="flex justify-evenly">
             {
-              heroCards.map( card => (
-                <div className="flex flex-col items-center my-4">
+              heroCards.map( (card, index) => (
+                <div className="flex flex-col items-center my-4" key={index}>
                   <img src={card.icon} alt={card.label} className="w-12"/>
                   <p className="font-raleway font-medium my-2">{card.label}</p>
                 </div>

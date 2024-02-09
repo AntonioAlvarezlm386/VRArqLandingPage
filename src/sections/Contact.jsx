@@ -17,8 +17,8 @@ const Contact = () => {
             mediante el siguiente formulario.
           </p>
           <div className="flex justify-evenly m-5">
-            {socialNet.map((link) => (
-              <a href={link.href} target="_blank">
+            {socialNet.map((link, index) => (
+              <a href={link.href} target="_blank" key={index}>
                 <img src={link.icon} alt={link.label} />
               </a>
             ))}

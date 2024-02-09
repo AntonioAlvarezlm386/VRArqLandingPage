@@ -1,7 +1,6 @@
 import {
   Dialog,
   Button,
-  DialogHeader,
   DialogBody,
   DialogFooter,
 } from "@material-tailwind/react";

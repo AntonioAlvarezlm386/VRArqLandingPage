@@ -4,8 +4,8 @@ export function Carrusel() {
   return (
     <Carousel
       className="rounded-lg"
-      loop="true"
-      autoplay="true"
+      loop
+      autoplay
       autoplayDelay={5000}
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
