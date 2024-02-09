@@ -10,7 +10,7 @@ export function ProjectModal({ open, handler, modalProps, mainImg }) {
   return (
     <>
       <Dialog open={open} handler={handler} size="md" className="h-fit">
-        <DialogBody className="h-fit overflow-scroll flex flex-wrap justify-center flex-row">
+        <DialogBody className="h-fit overflow-scroll flex flex-wrap justify-center flex-row pb-0">
           <div className="h-full  min-w-[20em]">
             <Gallery
               mainImg={mainImg}
@@ -18,12 +18,11 @@ export function ProjectModal({ open, handler, modalProps, mainImg }) {
               img3={modalProps.img3}
             />
           </div>
-          <div className="my-5 p-5 border-t-2  border-t-accent text-black font-raleway">
+          <div className="my-2 px-5 py-3 border-t-2 border-b-2 border-b-primary border-t-accent text-black font-raleway">
             <p>{modalProps.resume}</p>
           </div>
         </DialogBody>
-
-        <DialogFooter>
+        <DialogFooter className="m-0 pt-0 border">
           <Button
             variant="text"
             color="blue-gray"
