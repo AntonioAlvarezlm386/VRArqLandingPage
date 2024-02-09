@@ -1,4 +1,4 @@
-import { Input, Textarea, Button } from "@material-tailwind/react";
+import { Input, Textarea, Button, Spinner } from "@material-tailwind/react";
 import { useState } from "react";
 import FormDialog from "./FormDialog";
 import FormAlert from "./FormAlert";
@@ -6,6 +6,8 @@ import FormAlert from "./FormAlert";
 const Form = () => {
   const [open, setOpen] = useState(false);
   const [errors, setErrors] = useState({});
+  const [ fetchError, setFetchError ] = useState(false);
+  const [ loading, setLoading ] = useState(false); 
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -53,9 +55,10 @@ const Form = () => {
 
   const sendMessage = (e) => {
     e.preventDefault();
-    let status = false;
 
     if (validation()) {
+      handleOpen();
+      setLoading(true);
       fetch("https://formsubmit.co/ajax/antoniolm386@gmail.com", {
         method: "POST",
         headers: {
@@ -69,22 +72,22 @@ const Form = () => {
           Message: formData.message,
         }),
       })
-        .then((response) => response.json())
-        .then((data) => console.log(data))
-        .catch((error) => {console.log(error)});
-        handleOpen();
-    } else {
-      handleOpen();
+        .then((response) => {
+          setLoading(false);
+          setFetchError(false);
+        })
+        .catch((error) => {
+          setLoading(false);
+          setFetchError(true);
+        });
     }
-
-    return status;
   };
 
   return (
     <form className="my-5 flex flex-col justify-between w-[75%] md:w-[30%] h-[21em] text-white">
       <Input
         label="Nombre completo"
-        name="Nombre"
+        name="name"
         value={formData.name}
         onChange={handleChange}
         className={`!font-raleway !text-white`}
@@ -94,7 +97,7 @@ const Form = () => {
 
       <Input
         label="Número de teléfono"
-        name="Telefono"
+        name="phone"
         value={formData.phone}
         onChange={handleChange}
         className={`!font-raleway !text-background`}
@@ -104,7 +107,7 @@ const Form = () => {
 
       <Input
         label="Correo electrónico"
-        name="Correo"
+        name="email"
         value={formData.email}
         onChange={handleChange}
         className="!font-raleway !text-background"
@@ -114,7 +117,7 @@ const Form = () => {
 
       <Textarea
         color="blue"
-        name="Mensaje"
+        name="message"
         value={formData.message}
         label="Mensaje"
         onChange={handleChange}
@@ -133,7 +136,7 @@ const Form = () => {
         Enviar
       </Button>
 
-      <FormDialog open={open} handleOpen={handleOpen} error={sendMessage} />
+      <FormDialog open={open} handleOpen={handleOpen} sending={loading} error={fetchError}/>
     </form>
   );
 };
