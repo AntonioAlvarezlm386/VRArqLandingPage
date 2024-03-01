@@ -19,7 +19,7 @@ const About = () => {
           <p className="font-raleway text-secondary-text">
             Buscamos crear soluciones arquitectónicas que transformen el entorno
             construido y mejoren la calidad de vida de quienes lo
-            experimentan.Trabajamos en estrecha colaboración con cada cliente,
+            experimentan. Trabajamos en estrecha colaboración con cada cliente,
             enfocándonos en sus necesidades individuales para entregar proyectos
             excepcionales que reflejen nuestro compromiso con la excelencia y la
             ética profesional.

@@ -30,7 +30,7 @@ export function Gallery({ mainImg, img2, img3 }) {
             <img
               onClick={() => setActive(imgelink)}
               src={imgelink}
-              className="h-20 max-w-full cursor-pointer rounded-lg object-cover object-center"
+              className="h-20 max-w-full cursor-pointer rounded-lg object-cover object-center border"
               alt="gallery-image"
             />
           </div>

@@ -55,12 +55,12 @@ export const projects = [
     {
         mainData : {
             title: "Remodelación de casa habitación",
-            description: 'Transformamos una casa histórica en un lugar moderno. combinando elementos tradicionales con comodidades contemporáneas',
+            description: 'Transformamos una casa histórica en un lugar moderno. combinando elementos tradicionales con comodidades contemporáneas.',
             img1 : project21,
     
         }, 
         modalData: {
-            resume : "Nuestro objetivo fue preservar la autenticidad del diseño original a la ves que se introdujeron mejoras modernas. Se trabajo en la restauración de elementos arquitectónicos clave, y la modernización de instalaciones eléctricas y de fontanería para mejorar la funcionalidad y la eficiencia energética. Esta remodelación centrada en el confort transformó la casa en un refugio moderno que sigue manteniendo su carácter y encanto originales",
+            resume : "Nuestro objetivo fue preservar la autenticidad del diseño original a la ves que se introdujeron mejoras modernas. Se trabajo en la restauración de elementos arquitectónicos clave, y la modernización de instalaciones eléctricas y de fontanería para mejorar la funcionalidad y la eficiencia energética. Esta remodelación centrada en el confort transformó la casa en un refugio moderno que sigue manteniendo su carácter y encanto originales.",
             img2 : project22,
             img3 : project23
         }
@@ -73,7 +73,7 @@ export const projects = [
     
         }, 
         modalData: {
-            resume : "Cada detalle del proyecto fue cuidadosamente reproducido en un entorno virtual, permitiendo una planificación minuciosa y la toma de decisiones informada. Permitiendo una ejecución eficiente y un resultado final que cumple con las expectativas de los clientes y las demandas del mercado residencial moderno.",
+            resume : "Cada detalle del proyecto fue cuidadosamente reproducido en un entorno virtual, permitiendo una planificación minuciosa y la toma de decisiones informada. Permitiendo una ejecución eficiente y un resultado final que cumple con las expectativas del cliente y las demandas del mercado residencial moderno.",
             img2 : project32,
             img3 : project33
         }

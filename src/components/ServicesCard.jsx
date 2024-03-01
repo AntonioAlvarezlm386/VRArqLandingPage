@@ -8,7 +8,7 @@ export function ServicesCard({ icon, title, description }) {
         <Typography
           variant="h5"
           color="blue-gray"
-          className="mb-2 font-raleway"
+          className="mb-2 font-raleway w-full"
         >
           {title}
         </Typography>

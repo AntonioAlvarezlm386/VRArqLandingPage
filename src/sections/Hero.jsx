@@ -3,12 +3,12 @@ import { heroCards } from "../constants";
 
 const Hero = () => {
   return (
-    <div className="relative max-container lg:h-[575px]">
+    <div className="relative max-container h-fit xl:h-[575px]">
       <div
-        className="bg-divider px-10 py-20 w-full
-                      lg:w-[75%] "
+        className="bg-divider px-10 py-20 w-full h-
+                      xl:w-[75%]"
       >
-        <div className="w-full max-w-md mx-auto lg:mx-0 xl:w-[50%] xl:ml-16">
+        <div className="w-[95%] sm:w-[70%] mx-auto xl:mx-0 xl:w-[50%] xl:ml-16">
           <h1 className="text-h1 font-playfair font-medium">
             Arquitectura para tu vida cotidiana
           </h1>
@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="relative w-[90%] mx-auto -top-14 max-w-xl lg:absolute lg:max-w-[50%] lg:h-[90%] lg:right-0 lg:top-[20%]">
+      <div className="relative w-[90%] mx-auto -top-14 max-w-xl xl:absolute xl:max-w-[50%] xl:h-[90%] xl:right-0 xl:top-[20%]">
         <Carrusel />
       </div>
     </div>

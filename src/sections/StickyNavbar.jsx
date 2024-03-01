@@ -1,9 +1,9 @@
 import React from "react";
 import {
   Navbar,
-  MobileNav,
   Typography,
   IconButton,
+  Collapse,
 } from "@material-tailwind/react";
 
 const StickyNavbar = () => {
@@ -116,7 +116,7 @@ const StickyNavbar = () => {
             </IconButton>
           </div>
         </div>
-        <MobileNav open={openNav}>{navList}</MobileNav>
+        <Collapse open={openNav}>{navList}</Collapse>
       </Navbar>
     </div>
   );
