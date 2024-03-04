@@ -116,6 +116,7 @@ const Form = () => {
       {errors.email && <FormAlert warning={errors.email} />}
 
       <Textarea
+        maxLength={250}
         color="blue"
         name="message"
         value={formData.message}
